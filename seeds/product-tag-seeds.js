@@ -1,4 +1,5 @@
-const { ProductTag } = require('../models');
+//model failed to initialize when seeding, declaring file individually worked
+const ProductTag = require('../models/ProductTag');
 
 const productTagData = [
   {
@@ -50,8 +51,7 @@ const productTagData = [
     tag_id: 3,
   },
 ];
-console.log(ProductTag);
-console.log(productTagData);
+
 const seedProductTags = () => ProductTag.bulkCreate(productTagData);
 
 module.exports = seedProductTags;

@@ -13,17 +13,19 @@ ProductTag.init(
       primaryKey: true,
       autoIncrement: true
     },
+    //column used to connect to product
     product_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'Product',
+        model: 'product',
         key: 'id'
       }
     },
     tag_id: {
+      //column used to connect to tag
       type: DataTypes.INTEGER,
       references: {
-        model: 'Tag',
+        model: 'tag',
         key: 'id'
       }
     }

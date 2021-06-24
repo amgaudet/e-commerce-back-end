@@ -32,7 +32,7 @@ const productData = [
     category_id: 2,
   },
 ];
-console.log(Product);
+
 const seedProducts = () => Product.bulkCreate(productData);
 
 module.exports = seedProducts;

@@ -35,6 +35,7 @@ Product.init(
         isNumeric: true
       }
     },
+    //column used to talk to category model
     category_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
